@@ -2,18 +2,19 @@
 <>
 <head>
     <meta charset='utf-8'>
-    <title>ばかかどうかわかります</title>
+    <title>nohongokake</title>
     <script>function getlevel(){
-        if(document.getElementById('word').value == "あなたはばかですか"){document.cookie = "yuki=True; path=/;";}else{
+        if(document.getElementById('word').value == "japanese"){document.cookie = "yuki=True; path=/;";}else{
         let req = new XMLHttpRequest();
         req.addEventListener("load", function(){document.getElementById('info').textContent = this.responseText});
         req.open("GET", "/answer?q="+document.getElementById('word').value);
         req.send();}
     }</script>
 </head>
-    お前はばかですか?<br>
-    ばかかどうか<br>
-    わかるよ<br>
+   nazero-majidekaitearukawakaruyone<br>
+   
+    （なぜローマ字で書いているかわかるよね）<br>
+    わかるよね<br>
     <input id="word" type="text"></input><input type="button" onClick="getlevel()">確かめる</input>
     <div id="info">
 </body>
